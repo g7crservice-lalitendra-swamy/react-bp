@@ -3,6 +3,7 @@ import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from '../components/Home';
 import { Menu } from 'antd';
 import BestPractices from '../pages/BestPractices';
+import Concepts from '../pages/Concepts';
 
 const AppRoutes: React.FC = () => {
   const location = useLocation(); // Get the current route
@@ -24,7 +25,7 @@ const AppRoutes: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/best-practices" element={<BestPractices />} />
-        <Route path="/concepts" element={<Home />} />
+        <Route path="/concepts" element={<Concepts />} />
       </Routes>
     </>
   );

@@ -1,0 +1,25 @@
+/* Targeting the div with the class 'scrollable' */
+.scrollable {
+   
+}
+
+/* Webkit Browsers (Chrome, Safari, Edge) */
+.scrollable::-webkit-scrollbar {
+    width: 8px; /* Thin vertical scrollbar */
+    height: 8px; /* Thin horizontal scrollbar */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly visible thumb */
+    border-radius: 10px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: transparent; /* Invisible track */
+}
+
+/* For Firefox */
+.scrollable {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Dark thumb with invisible track */
+}
