@@ -6,7 +6,9 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["node_modules/@types"],
+     "moduleResolution": "node"
   },
   "include": ["src","react-app.env.d.ts"]
 }

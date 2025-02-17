@@ -4,6 +4,7 @@ import UseTransitionExample from '../components/concepts/useTransition';
 import UseOptimisticExample from '../components/concepts/useOptimistic';
 import UseFormStatusExample from '../components/concepts/useFormStatus';
 import UseExample from '../components/concepts/use/PostsList.server';
+import ThreeJs from '../components/concepts/threeJs';
 
 
 
@@ -11,7 +12,7 @@ import UseExample from '../components/concepts/use/PostsList.server';
 const { Title } = Typography;
 const { TabPane } = Tabs;
 
-const hooks = ['useTransition', 'useOptimistic', 'useFormStatus'];
+const hooks = ['useTransition', 'useOptimistic', 'useFormStatus','threeJs'];
 
 
 const TabComponents: Record<string, JSX.Element> = {
@@ -19,6 +20,7 @@ const TabComponents: Record<string, JSX.Element> = {
   useTransition:<UseTransitionExample />,
   useOptimistic: <UseOptimisticExample/>,
   useFormStatus: <UseFormStatusExample/>,
+  threeJs:<ThreeJs/>
   // 'use( )':<UseExample/>  
 
 };
@@ -26,11 +28,11 @@ const TabComponents: Record<string, JSX.Element> = {
 const Concepts: React.FC = () => {
   return (
     <div>
-      <Title>Best Practices</Title>
-      <Tabs defaultActiveKey="useTransition">
+      <Title>Concepts</Title>
+      <Tabs defaultActiveKey="threeJs">
         {hooks.map((hook) => (
           <TabPane tab={hook} key={hook}>
-            {TabComponents[hook] || <div>No content available</div>}         
+            {TabComponents[hook] || <div>No content available</div>}    
             
           </TabPane>
         ))}
