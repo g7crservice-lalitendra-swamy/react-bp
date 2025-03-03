@@ -23,8 +23,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.email "lalitendra.swamy@g7cr.com"
-          git config --global user.name "g7crservice-lalitendra-swamy"
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
 
       - name: Build the project
         run: npm run build
@@ -32,5 +32,6 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           CI: false
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npx gh-pages -d build --repo https://github.com/g7crservice-lalitendra-swamy/react-bp
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          npx gh-pages -d build -r https://${{ secrets.GH_TOKEN }}@github.com/g7crservice-lalitendra-swamy/react-bp.git
