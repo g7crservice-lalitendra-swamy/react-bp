@@ -1,15 +1,12 @@
-name: Deploy React Best Practices to GitHub Pages
+name: Deploy React App
 
 on:
   push:
     branches:
-      - main  # Change if your branch is different
-
-permissions:
-  contents: write
+      - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -35,4 +32,5 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           CI: false
-        run: npm run deploy
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: gh-pages -d build --repo https://GH_TOKEN@github.com/g7crservice-lalitendra-swamy/react-bp.git
