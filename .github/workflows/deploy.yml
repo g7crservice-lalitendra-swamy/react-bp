@@ -33,4 +33,4 @@ jobs:
         env:
           CI: false
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: gh-pages -d build --repo https://GH_TOKEN@github.com/g7crservice-lalitendra-swamy/react-bp.git
+        run: npx gh-pages -d build --repo https://GH_TOKEN@github.com/g7crservice-lalitendra-swamy/react-bp.git
