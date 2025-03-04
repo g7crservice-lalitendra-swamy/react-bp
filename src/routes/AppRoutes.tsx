@@ -11,21 +11,21 @@ const AppRoutes: React.FC = () => {
   return (
     <>
       <Menu mode="horizontal" theme="dark" selectedKeys={[location.pathname]}>
-        <Menu.Item key="/">
-          <Link to="/">Home</Link>
+        <Menu.Item key="/react-bp">
+          <Link to="/react-bp">Home</Link>
         </Menu.Item>
-        <Menu.Item key="/best-practices">
-          <Link to="/best-practices">Best Practices</Link>
+        <Menu.Item key="/react-bp/best-practices">
+          <Link to="/react-bp/best-practices">Best Practices</Link>
         </Menu.Item>
-        <Menu.Item key="/concepts">
-          <Link to="/concepts">Concepts</Link>
+        <Menu.Item key="/react-bp/concepts">
+          <Link to="/react-bp/concepts">Concepts</Link>
         </Menu.Item>
       </Menu>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/best-practices" element={<BestPractices />} />
-        <Route path="/concepts" element={<Concepts />} />
+        <Route path="/react-bp" element={<Home />} />
+        <Route path="/react-bp/best-practices" element={<BestPractices />} />
+        <Route path="/react-bp/concepts" element={<Concepts />} />
       </Routes>
     </>
   );
