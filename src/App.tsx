@@ -7,7 +7,7 @@ const { Header, Content, Footer } = Layout;
 
 const App: React.FC = () => {
   return (
-    <Router>
+    // <Router>
       <Layout>
         <Header style={{ color: 'white', fontSize: '20px' }}>React</Header>
         <Content style={{ padding: '20px' }}>
@@ -15,7 +15,7 @@ const App: React.FC = () => {
         </Content>
         <Footer style={{ textAlign: 'center' }}>© 2025 React</Footer>
       </Layout>
-    </Router>
+    // </Router>
   );
 };
 
