@@ -25,7 +25,7 @@ const Home = () => {
       </Card>
 
       <div style={{ marginTop: '20px' }}>
-        <Link to="/best-practices">
+        <Link to="/react-bp/best-practices">
           <Button type="primary">Learn More</Button>
         </Link>
       </div>
