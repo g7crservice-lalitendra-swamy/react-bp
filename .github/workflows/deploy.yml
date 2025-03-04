@@ -3,7 +3,7 @@ name: Deploy React App
 on:
   push:
     branches:
-      - main
+      - git-ci-cd
 
 jobs:
   build:
