@@ -1,7 +1,7 @@
 {
   "name": "react-bp",
   "version": "0.1.0",
-  "homepage": "https://lalitendraswamy.github.io/react-bp/",
+  
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
